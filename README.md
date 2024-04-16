@@ -1,33 +1,48 @@
-# expense-tracker
+## Expense Tracker App
 
-This template should help get you started developing with Vue 3 in Vite.
+Este é um aplicativo de rastreamento de despesas desenvolvido utilizando Vue.js, TypeScript e Pinia. Ele permite aos usuários registrar suas despesas e ganhos para acompanhar suas finanças pessoais.
 
-## Recommended IDE Setup
+### Funcionalidades
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Registro de Transações:** Os usuários podem adicionar novas transações especificando um valor negativo para despesa ou positivo para ganho.
+  
+- **Exibição de Transações:** O aplicativo exibe uma lista das transações registradas, mostrando o valor e a descrição cada uma.
 
-## Type Support for `.vue` Imports in TS
+- **Totalização de Balanço:** O saldo atual é calculado com base nas transações registradas, mostrando o saldo líquido entre ganhos e despesas.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### Tecnologias Utilizadas
 
-## Customize configuration
+- **Vue.js:** Um framework progressivo para a construção de interfaces de usuário.
+  
+- **TypeScript:** Um superset de JavaScript que adiciona tipagem estática ao código.
+  
+- **Pinia:** Um estado global simplificado e baseado em Vue.js para gerenciamento de estado.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **LocalStorage:** Utilizado para armazenar as transações localmente no navegador do usuário.
 
-## Project Setup
+### Configuração do Projeto
 
-```sh
-npm install
-```
+1. **Instalação das Dependências:**
+   ```bash
+   npm install
+   ```
 
-### Compile and Hot-Reload for Development
+2. **Compilação e Execução Local:**
+   ```bash
+   npm run dev
+   ```
 
-```sh
-npm run dev
-```
+### Estrutura do Projeto
 
-### Type-Check, Compile and Minify for Production
+- **`src/`**: Contém o código-fonte do aplicativo.
+  - **`components/`**: Componentes Vue reutilizáveis.
+  - **`views/`**: Vistas principais da aplicação.
+  - **`store/`**: Configurações do Pinia para gerenciamento de estado global.
+  - **`assets/`**: Arquivos estáticos como imagens, ícones, css, etc.
+  - **`App.vue`**: O componente raiz da aplicação.
+  - **`main.ts`**: Ponto de entrada da aplicação Vue.js.
 
-```sh
-npm run build
-```
+### Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema para relatar bugs ou solicitar novas funcionalidades. Se desejar contribuir com código, por favor, abra um pull request e descreva suas alterações.
+
